@@ -22,39 +22,26 @@
         </form>
       </section>
       <br />
-      <section id="playBoard">
-        <table class="table">
-          <tr>
-            <td><img id="blockImage1" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage2" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage3" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage4" src="../Image/Cat/backCat.jpg" /></td>
-          </tr>
-          <tr>
-            <td><img id="blockImage5" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage6" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage7" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage8" src="../Image/Cat/backCat.jpg" /></td>
-          </tr>
-          <tr>
-            <td><img id="blockImage9" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage10" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage11" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage12" src="../Image/Cat/backCat.jpg" /></td>
-          </tr>
-          <tr>
-            <td><img id="blockImage13" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage14" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage15" src="../Image/Cat/backCat.jpg" /></td>
-            <td><img id="blockImage16" src="../Image/Cat/backCat.jpg" /></td>
-          </tr>
-        </table>
-      </section>
+      <section id="playBoard"></section>
       <section id="bottomMenu">
         <table class="table">
           <tr>
-            <td><input id="reset" type="button" value="Reset" /></td>
-            <td><input id="average" type="button" value="Average" /></td>
+            <td>
+              <input
+                id="reset"
+                type="button"
+                value="Reset"
+                onclick="restart()"
+              />
+            </td>
+            <td>
+              <input
+                id="average"
+                type="button"
+                value="Average"
+                onclick="restart()"
+              />
+            </td>
             <td><input id="best" type="button" value="Best" /></td>
             <td><input id="now" type="button" value="Now" /></td>
           </tr>

@@ -26,7 +26,7 @@
       <section id="bottomMenu">
         <table class="table">
           <tr>
-            <td>
+            <td rowspan="2">
               <input
                 id="reset"
                 type="button"
@@ -35,15 +35,23 @@
               />
             </td>
             <td>
-              <input
-                id="average"
-                type="button"
-                value="Average"
-                onclick="restart()"
-              />
+              <input id="average" type="button" value="Average" />
             </td>
             <td><input id="best" type="button" value="Best" /></td>
-            <td><input id="now" type="button" value="Now" /></td>
+            <td>
+              <input id="now" type="button" value="Now" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="averCnt" type="button" value="0" />
+            </td>
+            <td>
+              <input id="bestCnt" type="button" value="0" />
+            </td>
+            <td>
+              <input id="clickCnt" type="button" value="0" />
+            </td>
           </tr>
         </table>
       </section>

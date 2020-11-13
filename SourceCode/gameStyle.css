@@ -20,10 +20,20 @@
   padding-bottom: 2%;
 }
 
-/* .table {
+.table {
   margin-left: auto;
   margin-right: auto;
-} */
+}
+
+.table input {
+  width: 100px;
+  height: 30px;
+  font-size: 1.2em;
+}
+
+#reset {
+  height: 60px;
+}
 
 /* .table img {
   width: 100px;

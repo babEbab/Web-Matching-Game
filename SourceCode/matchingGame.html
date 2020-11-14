@@ -28,9 +28,9 @@
           <tr>
             <td rowspan="2">
               <input
-                id="reset"
+                id="retry"
                 type="button"
-                value="Reset"
+                value="Retry"
                 onclick="restart()"
               />
             </td>
@@ -54,6 +54,13 @@
             </td>
           </tr>
         </table>
+        <br />
+        <input
+          id="reset"
+          type="button"
+          value="모든 기록 초기화"
+          onclick="clearRecordlist()"
+        />
       </section>
     </main>
     <br />

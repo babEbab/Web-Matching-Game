@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>Killing Time-Web Matching Game</title>
     <link rel="stylesheet" type="text/css" href="gameStyle.css" />
     <script src="matching.js"></script>
-    <script src="record.js"></script>
   </head>
   <body>
-    <header class="header"><h1>Killing Time</h1></header>
+    <header class="header" onclick="restart()">
+      <h1>Killing Time</h1>
+    </header>
     <main id="main">
       <section id="topMenu">
         <form class="form">
+          Select Image |
           <label>
-            Select Image |
-            <select name="topic">
-              <option value="cat">고양이</option>
-              <option value="dog">강아지</option>
+            <select id="theme" name="theme">
+              <option selected value="cat">고양이</option>
             </select>
           </label>
         </form>
@@ -59,10 +59,11 @@
           id="reset"
           type="button"
           value="모든 기록 초기화"
-          onclick="clearRecordlist()"
+          onclick="removeRecordlist()"
         />
       </section>
     </main>
+    <br />
     <br />
     <footer class="footer">Copyright 2020. 최다솜 All rights reserved.</footer>
   </body>
